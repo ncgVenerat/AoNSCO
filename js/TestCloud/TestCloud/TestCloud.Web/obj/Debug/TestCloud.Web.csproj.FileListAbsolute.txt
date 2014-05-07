@@ -1,0 +1,10 @@
+c:\Users\Mike Talbot.ALTERIAN\Documents\Visual Studio 2010\Projects\TestCloud\TestCloud.Web\bin\TestCloud.Web.dll
+c:\Users\Mike Talbot.ALTERIAN\Documents\Visual Studio 2010\Projects\TestCloud\TestCloud.Web\bin\TestCloud.Web.pdb
+c:\Users\Mike Talbot.ALTERIAN\Documents\Visual Studio 2010\Projects\TestCloud\TestCloud.Web\obj\Debug\ResolveAssemblyReference.cache
+c:\Users\Mike Talbot.ALTERIAN\Documents\Visual Studio 2010\Projects\TestCloud\TestCloud.Web\obj\Debug\TestCloud.Web.dll
+c:\Users\Mike Talbot.ALTERIAN\Documents\Visual Studio 2010\Projects\TestCloud\TestCloud.Web\obj\Debug\TestCloud.Web.pdb
+C:\Serializer\Cloud\TestCloud\TestCloud.Web\bin\TestCloud.Web.dll
+C:\Serializer\Cloud\TestCloud\TestCloud.Web\bin\TestCloud.Web.pdb
+C:\Serializer\Cloud\TestCloud\TestCloud.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Serializer\Cloud\TestCloud\TestCloud.Web\obj\Debug\TestCloud.Web.dll
+C:\Serializer\Cloud\TestCloud\TestCloud.Web\obj\Debug\TestCloud.Web.pdb

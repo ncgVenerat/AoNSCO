@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="TestCloud.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:WordCloudControl="clr-namespace:WordCloudControl;assembly=WordCloudControl"
+             mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+
+      </Grid.RowDefinitions>
+      <TextBox TextWrapping="Wrap" x:Name="TextToMap" Width="300" MaxHeight="60" TextChanged="TextToMap_OnTextChanged" AcceptsReturn="True" />
+      <!--<WordCloudControl:WordCloud MouseLeftButtonDown="Cloud_OnMouseLeftButtonDown" FontFamily="Trebuchet MS" Grid.Row="1" x:Name="Cloud" FromColor="#CCA56666" ToColor="#FFA56666" MaxWords="4000" Background="LightBlue"/>-->
+      <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          
+        </Grid.ColumnDefinitions>
+        <Grid Margin="3">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Border Background="White"
+                  CornerRadius="3,3,0,0" />
+          
+          <WordCloudControl:WordCloud Margin="3"
+                                      x:Name="Cloud"
+                                      Grid.Row="1"
+                                      DefaultColor="DarkBlue"
+                                      SelectedColor="Red"
+                                      MouseLeftButtonDown="Cloud_OnMouseLeftButtonDown"
+                                      />
+        </Grid>
+        
+      </Grid>
+
+
+    </Grid>
+</UserControl>

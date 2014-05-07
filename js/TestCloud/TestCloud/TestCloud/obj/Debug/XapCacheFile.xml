@@ -1,0 +1,5 @@
+﻿<xapCache source="C:\Serializer\Cloud\TestCloud\TestCloud\Bin\Debug\TestCloud.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="8/17/2011 9:06:32 AM">
+  <file source="C:\Serializer\Cloud\TestCloud\TestCloud\obj\Debug\TestCloud.dll" archivePath="TestCloud.dll" lastWriteTime="8/17/2011 9:06:32 AM" />
+  <file source="C:\Serializer\Cloud\WordCloud\WordCloudControl\Bin\Debug\WordCloudControl.dll" archivePath="WordCloudControl.dll" lastWriteTime="8/17/2011 9:05:42 AM" />
+  <file source="C:\Serializer\Cloud\TestCloud\TestCloud\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/28/2011 2:05:19 AM" />
+</xapCache>
