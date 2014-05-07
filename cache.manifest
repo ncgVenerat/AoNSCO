@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# version - 02
+
+CACHE:
+
+# CSS
+css-main.css
+css-normalize.css
+
+# IMAGES
+
+# HTML FILES
+index.html
+chartD3.html
+
+# JAVASCRIPT - SPECIFIC ORDER
+d3.js
+d3.min.js
+js-main.js
+js-refresh-manifest.js
+
+## Any resources not listed above will require the user to be online.
+NETWORK:
+*

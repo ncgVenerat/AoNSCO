@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/css-main.css" media="screen">
+    <title>D3 Experimenting</title>
+</head>
+        <body>
+        <div class="chart"></div>
+        <div id="rectangle"></div>
+        <div id="VERTrect"></div>
+        <div id="viz"></div>
+        <script src="js/d3.js"></script>
+        <script type="text/javascript">
+            var data = [4, 8, 15, 16, 23, 42];
+            var x = d3.scale.linear()
+                .domain([0, d3.max(data)])
+                .range([0, 420]);
+
+            d3.select(".chart")
+                .selectAll("div")
+                .data(data)
+                .enter().append("div")
+                .style("width", function(d) {
+                return x(d) + "px";
+            })
+                .text(function(d) {
+                return d;
+            });
+            </script>
+        <script type="text/javascript">
+            var rect = d3.select("#rectangle")
+                .append("svg")
+                .attr("width", 500)
+                .attr("height", 175);
+            rect.append("rect")
+                .style("stroke", "black")
+                .style("fill", "orange")
+                .attr("width", 250)
+                .attr("height", 145)
+                .attr("x", 50)
+                .attr("y", 50)
+                .on("mouseover", function(){d3.select(this).style("fill", "skyblue");})
+                .on("mouseout", function(){d3.select(this).style("fill", "orange");})
+                .on("mousedown", animate2);
+                
+                function animate2(){
+                d3.select(this).transition()
+        .duration(1000)
+        .attr("width", 450)
+        .attr("height", 72.5)
+      .transition()
+        .delay(1000)
+        .attr("width", 250)
+        .attr("height", 145);
+                }
+        </script>
+        <script type="text/javascript">
+            var rect = d3.select("#VERTrect")
+                .append("svg")
+                .attr("width", 150)
+                .attr("height", 450);
+            rect.append("rect")
+                .style("stroke", "green")
+                .style("fill", "darkgreen")
+                .attr("width", 150)
+                .attr("height", 300)
+                .attr("x", 50)
+                .attr("y", 50)
+                .on("mouseover", function(){d3.select(this).style("fill", "orange");})
+                .on("mouseout", function(){d3.select(this).style("fill", "darkgreen");})
+                .on("mousedown", animate2);
+                
+                function animate2(){
+                d3.select(this).transition()
+        .duration(1000)
+        .attr("width", 450)
+        .attr("height", 150)
+      .transition()
+        .delay(1000)
+        .attr("width", 150)
+        .attr("height", 300);
+                }
+        </script>
+        <script type="text/javascript">
+            var sampleSVG = d3.select("#viz")
+    .append("svg")
+    .attr("width", 100)
+    .attr("height", 100);    
+    
+sampleSVG.append("circle")
+    .style("stroke", "gray")
+    .style("fill", "white")
+    .attr("r", 40)
+    .attr("cx", 50)
+    .attr("cy", 50)
+    .on("mouseover", function(){d3.select(this).style("fill", "aliceblue");})
+    .on("mouseout", function(){d3.select(this).style("fill", "white");})
+    .on("mousedown", animate);
+
+function animate() {
+    d3.select(this).transition()
+        .duration(1000)
+        .attr("r", 10)
+      .transition()
+        .delay(1000)
+        .attr("r", 40);
+};
+        </script>
+</body>
+</html>

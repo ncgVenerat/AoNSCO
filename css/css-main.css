@@ -1,0 +1,34 @@
+@font-face{
+    font-family:'DeadSpaceUnitology';
+    src:url(img/DeadSpace_Unitology.ttf);
+}
+
+#content {
+    margin-left: 15px;
+}
+
+#marker {
+    font-family: 'DeadSpaceUnitology';
+}
+
+
+.chart div{
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+#rectangle {
+    height: 240px;
+}
+
+#VERTrect {
+    width: 300px;
+}
+
+#header {
+    height:20%;
+}
