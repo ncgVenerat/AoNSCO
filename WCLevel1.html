@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" manifest="cache.manifest">
+    
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <!-- CSS -->
@@ -15,53 +16,18 @@
         <!-- iPhone splashscreens-->
         <link rel="apple-touch-startup-image" href="img/markersplash.png" sizes="320x460" media="(device-width:320px)">
         <link rel="apple-touch-startup-image" href="img/markersplash-larger.png" sizes="640x920" media="(device-width:320px) and (-webkit-device-pixel-ratio: 2">
-    </head>
-    <title>Testing Field</title>
-    </head>
-    <body>
-
-        <div id="content">
-        <h1>INSECTA</h1>
-        <ul>
-            <li id="">Anoplura    2</li>
-            <li id="">Archaeognatha   372</li>
-            <li id="">Blattodea   32819</li>
-            <li id="">Coleoptera  273310</li>
-            <li id="">Dermaptera  10746</li>
-            <li id="">Diptera     252071</li>
-            <li id="">Embioptera  51</li>
-            <li id="">Ephemeroptera   29988</li>
-            <li id="">Grylloblattodea 22</li>
-            <li id="">Hemiptera   39885</li>
-            <li id="">Hymenoptera 207286</li>
-            <li id="">Isoptera    2001</li>
-            <li id="">Lepidoptera 117564</li>
-            <li id="">Mallophaga  15</li>
-            <li id="">Mantodea    13031</li>
-            <li id="">Mecoptera   723</li>
-            <li id="">Megaloptera 3629</li>
-            <li id="">Neuroptera  3654</li>
-            <li id="">Odonata     51179</li>
-            <li id="">Orthoptera  496422</li>
-            <li id="">Phasmatodea 11935</li>
-            <li id="">Phthiraptera    1149</li>
-            <li id="">Plecoptera  9625</li>
-            <li id="">Psocoptera  876</li>
-            <li id="">Raphidioptera   184</li>
-            <li id="">Rhaphidioptera  43</li>
-            <li id="">Siphonaptera    587</li>
-            <li id="">Strepsiptera    58</li>
-            <li id="">Thysanoptera    1829</li>
-            <li id="">Thysanura   143</li>
-            <li id="">Trichoptera 64315</li>
-            <li id="">Undetermined    41171</li>
-            <li id="">Zoraptera   1</li>
-        </ul>
-
-        </div>
+        <title>Sample Word Cloud</title>
         <!--JAVASCRIPT-->
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
         <script src="js/d3.js"></script>
         <script src="js/js-add2home.js"></script>
         <script src="js/js-main.js"></script>
+    </head>
+    
+    <body>
+        <div id="content">
+            <h1>INSECTA</h1>
+        </div>
+        <div id="wcdiv"></div>
     </body>
 </html>
