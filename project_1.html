@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>
+<link rel="stylesheet" type="text/css" href="css/css-main.css" media="screen">
+</head>
 <body>
     <script src="js/d3.js"></script>
     <script src="js/d3.layout.cloud.js"></script>
@@ -113,9 +116,9 @@
         }))
             .padding(5)
             .rotate(function() {
-            return~~ (Math.random() * 2) * 90;
+            return~~ (Math.random() * 6) * 30;
         })
-            .font("Impact")
+            .font('Impact')
             .fontSize(function(d) {
             return d.size;
         })
@@ -134,7 +137,7 @@
                 .style("font-size", function(d) {
                 return (d.size * 4.5) + "px";
             })
-                .style("font-family", "Impact")
+                .style("font-family", 'Impact')
                 .style("fill", function(d, i) {
                 return fill(i);
             })
