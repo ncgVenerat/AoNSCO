@@ -1,7 +1,6 @@
-
 var specOrder = [
-    "Anoplura", 
-    "Archaeognatha", 
+    "Anoplura",
+    "Archaeognatha",
     "Blattodea",
     "Coleoptera",
     "Dermaptera",
@@ -69,26 +68,29 @@ var specCount = [
     41171,
     1
 ];
+
 function wordCloudSize {
-    if (specCount[i] <= 100){
-        wordCloudSize(specOrder[i]) = 1
-    } else if (specCount[i] <= 500) {
-        wordCloudSize(specOrder[i]) = 2
-    } else if (specCount[i] <= 1000) {
-        wordCloudSize(specOrder[i]) = 3
-    } else if (specCount[i] <= 5000) {
-        wordCloudSize(specOrder[i]) = 4
-    } else if (specCount[i] <= 10000) {
-        wordCloudSize(specOrder[i]) = 5
-    } else if (specCount[i] <= 50000) {
-        wordCloudSize(specOrder[i]) = 6
-    } else if (specCount[i] <= 100000) {
-        wordCloudSize(specOrder[i]) = 7
-    } else if (specCount[i] <= 200000) {
-        wordCloudSize(specOrder[i]) = 8
-    } else if (specCount[i] <= 300000) {
-        wordCloudSize(specOrder[i]) = 9
-    } else {
-        wordCloudSize(specOrder[i]) = 10
+    for (var i = 0; i < specOrder.length; i++) {
+        if (specCount[i] <= 100) {
+            wordCloudSize(specOrder[i]) = 1
+        } else if (specCount[i] <= 500) {
+            wordCloudSize(specOrder[i]) = 2
+        } else if (specCount[i] <= 1000) {
+            wordCloudSize(specOrder[i]) = 3
+        } else if (specCount[i] <= 5000) {
+            wordCloudSize(specOrder[i]) = 4
+        } else if (specCount[i] <= 10000) {
+            wordCloudSize(specOrder[i]) = 5
+        } else if (specCount[i] <= 50000) {
+            wordCloudSize(specOrder[i]) = 6
+        } else if (specCount[i] <= 100000) {
+            wordCloudSize(specOrder[i]) = 7
+        } else if (specCount[i] <= 200000) {
+            wordCloudSize(specOrder[i]) = 8
+        } else if (specCount[i] <= 300000) {
+            wordCloudSize(specOrder[i]) = 9
+        } else {
+            wordCloudSize(specOrder[i]) = 10
+        }
     }
 }
