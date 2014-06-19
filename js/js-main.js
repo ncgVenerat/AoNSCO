@@ -2,7 +2,7 @@ function jmp2LocalPage(whichPage) {
 	location.href = whichPage;
 }
 
-google.load("visualization", "1");
+/*google.load("visualization", "1");
       google.setOnLoadCallback(draw);
       function draw() {
         var data = new google.visualization.DataTable();
@@ -81,7 +81,7 @@ google.load("visualization", "1");
         wc.draw(data, null);
       }
 
-
+*/
 /*
 
 A list of words, where the size and color of each word is determined

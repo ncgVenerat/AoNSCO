@@ -59,3 +59,10 @@ text {
     right: auto;
     background-color: green;
 }
+
+.wcSlate {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    background-color: grey;
+}
