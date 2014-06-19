@@ -31,8 +31,9 @@
 }
 
 #header {
-    height:20%;
+    height:80px;
     background-color: red;
+    width: 100%;
 }
 
 text {
@@ -54,9 +55,6 @@ text {
 #wcdiv {
     width: 45%;
     height: 50%;
-    position: absolute;
-    top: 200px;
-    right: auto;
     background-color: green;
 }
 
