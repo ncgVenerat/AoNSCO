@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<html>
 <meta charset="utf-8">
 <head>
 <link rel="stylesheet" type="text/css" href="css/css-main.css" media="screen">
 </head>
 <body>
+    <div id="WC"></div>
     <script src="js/d3.js"></script>
     <script src="js/d3.layout.cloud.js"></script>
     <script>
@@ -105,7 +107,7 @@
         }
         var fill = d3.scale.category20();
 
-        d3.layout.cloud().size([450, 450])
+        d3.layout.cloud().size([800, 700])
             .words(
             specOrder
             .map(function(d, i) {
@@ -116,9 +118,9 @@
         }))
             .padding(5)
             .rotate(function() {
-            return~~ (Math.random() * 6) * 30;
+            return~~ 0;
         })
-            .font('Impact')
+            .font('Trajan Pro')
             .fontSize(function(d) {
             return d.size;
         })
@@ -126,7 +128,7 @@
             .start();
 
         function draw(words) {
-            d3.select("body").append("svg")
+            d3.select("#WC").append("svg")
                 .attr("width", 700)
                 .attr("height", 700)
                 .append("g")
@@ -135,9 +137,9 @@
                 .data(words)
                 .enter().append("text")
                 .style("font-size", function(d) {
-                return (d.size * 4.5) + "px";
+                return (d.size * 8) + "px";
             })
-                .style("font-family", 'Impact')
+                .style("font-family", 'Trajan Pro')
                 .style("fill", function(d, i) {
                 return fill(i);
             })
@@ -150,3 +152,6 @@
             });
         }
     </script>
+    
+   </body>
+   </html>

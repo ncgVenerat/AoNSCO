@@ -5,6 +5,7 @@
 
 #content {
     margin-left: 15px;
+    background-color: blue;
 }
 
 #marker {
@@ -31,6 +32,11 @@
 
 #header {
     height:20%;
+    background-color: red;
+}
+
+text {
+    padding: 5px;
 }
 
 <!--WORD CLOUD CSS -->
@@ -44,3 +50,12 @@
 .word-cloud-7 {font-size: 36px; color: #071a41; }
 .word-cloud-8 {font-size: 40px; color: #081122; }
 .word-cloud-9 {font-size: 44px; color: #000000; }
+
+#wcdiv {
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    top: 200px;
+    right: auto;
+    background-color: green;
+}
