@@ -52,10 +52,10 @@ text {
 .word-cloud-9 {font-size: 44px; color: #000000; }
 
 #wcdiv {
-    width: 220px;
+    width: 225px;
     height: 50%;
     background-color: green;
-    margin-left: 25%;
+    
 }
 
 .wcSlate {
