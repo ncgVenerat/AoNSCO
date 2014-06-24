@@ -62,7 +62,7 @@ text {
     width: 90px;
     height: 90px;
     margin: 10px;
-    background-color: grey;
+    background-image: url(../img/slateSample.png);
 }
 
 .wcS2 {

@@ -137,7 +137,7 @@
                 .data(words)
                 .enter().append("text")
                 .style("font-size", function(d) {
-                return (d.size * 8) + "px";
+                return (d.size * 4 + 10) + "px";
             })
                 .style("font-family", 'Trajan Pro')
                 .style("fill", function(d, i) {
