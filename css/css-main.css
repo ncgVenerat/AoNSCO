@@ -4,7 +4,6 @@
 }
 
 #content {
-    margin-left: 15px;
     background-color: blue;
 }
 
@@ -53,14 +52,20 @@ text {
 .word-cloud-9 {font-size: 44px; color: #000000; }
 
 #wcdiv {
-    width: 45%;
+    width: 220px;
     height: 50%;
     background-color: green;
+    margin-left: 25%;
 }
 
 .wcSlate {
-    width: 75px;
-    height: 75px;
-    margin: 5px;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
     background-color: grey;
+}
+
+.wcS2 {
+    position: relative;
+    left: 20px;
 }
