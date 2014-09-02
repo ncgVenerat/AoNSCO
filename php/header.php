@@ -16,5 +16,10 @@
         <link rel="apple-touch-startup-image" href="img/markersplash.png" sizes="320x460" media="(device-width:320px)">
         <link rel="apple-touch-startup-image" href="img/markersplash-larger.png" sizes="640x920" media="(device-width:320px) and (-webkit-device-pixel-ratio: 2">
     </head>
-    <title><!--GET name from WCLevel1.html click--></title>
+    <title>
+    <?php 
+    $cloudTitle = get_cloudTitle();
+    echo $cloudTitle;
+    ?>
+    </title>
     </head>

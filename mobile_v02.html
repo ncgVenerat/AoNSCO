@@ -16,7 +16,7 @@
         <!-- iPhone splashscreens-->
         <link rel="apple-touch-startup-image" href="img/markersplash.png" sizes="320x460" media="(device-width:320px)">
         <link rel="apple-touch-startup-image" href="img/markersplash-larger.png" sizes="640x920" media="(device-width:320px) and (-webkit-device-pixel-ratio: 2">
-        <title>Sample Word Cloud</title>
+        <title>Academy of Natural Science</title>
         <!--JAVASCRIPT-->
         <script type="text/javascript" src="http://www.google.com/jsapi"></script>
         <script src="js/d3.js"></script>
@@ -25,9 +25,22 @@
     </head>
     
     <body>
-        <div id="content">
-            <h1>INSECTA</h1>
+        <div id="header">
+        <!--Insert AONS logo 
+        <img src="img/aonsLogo.png">
+        -->
         </div>
-        <div id="wcdiv"></div>
+        <div id="content">
+        <div id="wcdiv">
+            <!-- Get WordCloud database -->
+            <!-- Get database data, apply database data to WCbody coded WordCloud-->
+            <div id="WCbody">
+                <?php GET array(SpecList)
+                array_count_values(Specimen_Name.Specimen_Count) 
+                echo SpecList.specCount()?>
+            </div>
+
+        </div>
+        </div>
     </body>
 </html>
