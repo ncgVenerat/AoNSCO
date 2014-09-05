@@ -6,9 +6,9 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <!-- CSS -->
-        <link rel="stylesheet" href="css/css-normalize.css">
-        <link rel="stylesheet" href="css/css-add2home.css">
-        <link rel="stylesheet" href="css/css-main.css">
+        <link rel="stylesheet" href="../css/css-normalize.css">
+        <link rel="stylesheet" href="../css/css-add2home.css">
+        <link rel="stylesheet" href="../css/css-main.css">
         <!-- iPhone ICON -->
         <link rel="apple-touch-icon" href="img/placeholder_icon-57x57.png" sizes="57x57">
         <link rel="apple-touch-icon" href="img/placeholder_icon-114x114.png" sizes="114x114">
@@ -18,8 +18,8 @@
     </head>
     <title>
     <?php 
-    $cloudTitle = get_cloudTitle();
-    echo $cloudTitle;
+        
+
     ?>
     </title>
     </head>

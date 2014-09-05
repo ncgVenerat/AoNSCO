@@ -1,15 +1,9 @@
-@font-face{
-    font-family:'DeadSpaceUnitology';
-    src:url(../img/DeadSpace_Unitology.ttf);
-}
+
 
 #content {
     background-color: blue;
 }
 
-#marker {
-    font-family: 'DeadSpaceUnitology';
-}
 
 
 .chart div{
@@ -76,5 +70,9 @@ text {
 }
 
 #logo {
-    background-image:url(/img/logo.jpg);
+    background-image:url(../img/logo.jpg);
+}
+
+.displayTitle {
+    text-align: center;
 }
